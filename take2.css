@@ -1,0 +1,102 @@
+html{
+  background-color: midnightblue;
+  
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  /* row-gap: 0; */
+  /* bottom: 0; */
+  height: 100%;
+
+}
+#sky{
+  border: 1px solid black;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  min-height: 140px;
+}
+.moon {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 rgb(239, 248, 188);
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+
+}
+#mountian {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  background-color: coral;
+  border: 5px black solid;
+  height: 45%;
+}
+#ground{
+border: 1px solid black;
+background-color: rgb(9, 244, 33);
+grid-column-start: 1;
+grid-column-end: span 3;
+grid-row-start: 3;
+grid-row-end: span 1;
+/* bottom: 0; */
+}
+body{
+  height: 100%;
+}
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(173, 93, 7);
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+#triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(173, 93, 7);
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+input{
+  margin: 7px;
+}
+footer{
+  background-color:lightyellow;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;  
+}
